@@ -32,17 +32,17 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="jumbotron text-center">
-							<h1>Two way data binding on <code>Vue.js</code></h1>
-						</div>
+						<textarea :value=input @input="update">{{input}}</textarea>
+						<div class="output-text" v-html="compiledMarkdown"></div>
 					</div>
 				</div>
 			<!-- </div> -->
 			<!-- <div class="container"> -->
 				<div class="row">
 					<div class="col-lg-6">
-						<textarea :value=input @input="update">{{input}}</textarea>
-						<div class="output-text" v-html="compiledMarkdown"></div>
+						<div class="jumbotron text-center">
+							<h1>Two way data binding on <code>Vue.js</code></h1>
+						</div>
 					</div>
 					<div class="col-lg-6">
 						<textarea v-model="inputDataBinding"></textarea>
